@@ -11,21 +11,29 @@ html, input, button {
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #F9F9F9;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
 }
 .container {
-    height: 100%;
+    height: 90%;
     width: 100%;
     max-width: 720px;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: relative;
+    z-index: 1;
 }
 
 header {
-    margin-top: 64px;
+    margin-top: 0px;
     margin-bottom: 40px;
     display: flex;
     align-items: center;
@@ -56,7 +64,7 @@ header h1 {
 }
 
 .form button {
-    background: #F40273;
+    background: #39006e;
     color: #fff;
     padding: 16px 32px;
     border-radius: 5px; 
@@ -65,7 +73,7 @@ header h1 {
     animation: filter 0.5s ease;
 }
 .form button:hover {
-    filter: brightness(0.8);
+    background-color: #a70289;
 }
 .list {
     width: 100%;
@@ -95,10 +103,11 @@ header h1 {
 }
 
 .list ul li {
-    padding: 16px;
+    padding: 10px;
     background: #fff;
     border-radius: 5px;
     color: #44546A;
+    margin: 3px;
 }
 
 .news {
@@ -127,4 +136,8 @@ header h1 {
     text-overflow: ellipsis;
     font-size: 14px;
     color: #44546A;
+}
+
+strong {
+    border-left: 30px;
 }
