@@ -24,7 +24,7 @@ A notícia é exibida dinamicamente na página principal como uma notícia patro
 Clone o repositório.
 Abra o arquivo index.html em seu navegador.
 Interaja com a aplicação para adicionar, excluir ou limpar interesses.
-Este projeto foi desenvolvido como parte de um exercício prático para demonstrar o uso básico de JavaScript com localStorage para manipulação de dados simples na web.
+Este projeto foi desenvolvido como parte de um exercício prático para demonstrar o uso básico de JavaScript com localStorage para manipulação de dados simples na web e também como utilizar APIs para inserir dados via manipulação de DOM.
 
 # Próximos Passos:
 * Melhorar o design e a usabilidade da interface.
