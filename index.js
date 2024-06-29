@@ -2,6 +2,7 @@ const inputElement = document.querySelector('input');
 const buttonAdd = document.querySelector('.button-add');
 const list = document.querySelector('ul');
 const buttonClear = document.querySelector('.button-clear');
+const noticiaPrincipal = document.querySelector('.title-news-today')
 
 
 function recuperarList() {
@@ -48,3 +49,13 @@ buttonClear.addEventListener('click', () => {
 });
 
 setInterval(recuperarList, 1000)
+
+async function pegarNoticia() {
+    const resposta = await fetch('https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release')
+    const noticia = await resposta.json()
+    const noticiaFetch = noticia.items[0].titulo
+    noticiaPrincipal.innerHTML = noticiaFetch
+
+}
+
+pegarNoticia()
